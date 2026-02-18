@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pokedexYellow">
+
+    <View
+        android:id="@+id/imgPokeBg"
+        android:layout_width="198dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/poke_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/whiteCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_rounded_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <ImageView
+        android:id="@+id/imgPokemonMid"
+        android:layout_width="210dp"
+        android:layout_height="209dp"
+        app:srcCompat="@drawable/pikachu"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/tvNombrePokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pikachu"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNumPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/pokemon_number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombrePokemon" />
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/altura"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/tvAltura2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/peso"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAltura" />
+
+    <TextView
+        android:id="@+id/tvAltura3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/habilidad"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvAltura"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/tvInfAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/alturapika"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvAltura"
+        tools:layout_editor_absoluteY="353dp" />
+
+    <TextView
+        android:id="@+id/tvInfHabilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/habilidadpika"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAltura3"
+        tools:layout_editor_absoluteX="214dp" />
+
+    <TextView
+        android:id="@+id/tvInfPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/pesopika"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvAltura2"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="240dp"
+        android:layout_height="90dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/pikachu_description"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <ImageView
+        android:id="@+id/imgArbok"
+        android:layout_width="128dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescripcion"
+        app:srcCompat="@drawable/arbok" />
+
+    <ImageView
+        android:id="@+id/imgRaichu"
+        android:layout_width="127dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescripcion"
+        app:srcCompat="@drawable/raichu" />
+
+    <TextView
+        android:id="@+id/tvNumBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/arbok"
+        app:layout_constraintTop_toBottomOf="@+id/imgArbok"
+        tools:layout_editor_absoluteX="51dp" />
+
+    <TextView
+        android:id="@+id/tvNumBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/raichu"
+        app:layout_constraintTop_toBottomOf="@+id/imgRaichu"
+        tools:layout_editor_absoluteX="266dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

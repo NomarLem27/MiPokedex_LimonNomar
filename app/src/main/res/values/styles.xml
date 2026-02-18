@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PokemonTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="PokemonNumber">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="PokemonStatLabel">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="PokemonDescription">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:padding">12dp</item>
+    </style>
+</resources>
