@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun PokemonNeighbor(
-    position: String, // "left" o "right"
+    position: String,
     image: Int,
     name: String,
     number: Int

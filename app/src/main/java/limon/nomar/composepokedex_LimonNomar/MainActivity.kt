@@ -143,8 +143,8 @@ fun PokemonCard(
                 }
 
 
-                // 🔽 Bloque actualizado: Pokémon anterior y siguiente 🔽
-                Spacer(modifier = Modifier.weight(1f)) // empuja hacia abajo el contenido
+
+                Spacer(modifier = Modifier.weight(1f))
                 Row(
                     Modifier
                         .fillMaxWidth()
