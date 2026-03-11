@@ -1,4 +1,4 @@
-package components
+package limon.nomar.composepokedex_LimonNomar.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -11,7 +11,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import limon.nomar.composepokedex_LimonNomar.ui.theme.ElectricYellow
-import limon.nomar.composepokedex_LimonNomar.ui.theme.White
 
 @Composable
 fun Chip(text: String, color: Color, modifier: Modifier = Modifier){
